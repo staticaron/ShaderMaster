@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: m_Water
+  m_Shader: {fileID: -6465566751694194690, guid: 70b3b0eaf6a761548b6de5262ac9d798,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _WaveNormal:
+        m_Texture: {fileID: 2800000, guid: 1abca4a0d5f2f3b48acf595bb9a3487b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveTexture:
+        m_Texture: {fileID: 2800000, guid: cc021b1e03ab06f4da16b35577082671, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _IntersectionDiff: 0.25
+    - _IntersectionOutlineStrength: 0.07
+    - _MainWaveSpeed: 0.1
+    - _MaxWaveHeight: 0.1
+    - _Metallicness: 0.41
+    - _NormalStrength: 1.5
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReverseWaveSpeed: -0.05
+    - _Strength: 1
+    - _WaveDisplacementSpeed: 0.3
+    - _WaveHeightStrength: 0.3
+    - _WaveNoiseMovementSpeed: 0.04
+    - _WaveNoiseScaling: 100
+    - _WaveSpeed: 0.1
+    - _WaveSpeedReverse: -1
+    m_Colors:
+    - _DeepWaterColor: {r: 0, g: 0.7647059, b: 1, a: 0.8117647}
+    - _IntersectionTint: {r: 0.5037735, g: 1, b: 0.9629722, a: 1}
+    - _MainNormalTiling: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _MainTint: {r: 0, g: 0.66507936, b: 1, a: 1}
+    - _ReverseNormalTiling: {r: 0.6, g: 0.6, b: 0, a: 0}
+    - _ShallowWaterColor: {r: 0.63584906, g: 0.92270386, b: 1, a: 0.6392157}
+    - _WaveColor: {r: 0, g: 1, b: 0.9293189, a: 1}
+    - _WaveTextureTiling: {r: 2, g: 2, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &2427708936963275337
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
