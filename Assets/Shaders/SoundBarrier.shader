@@ -90,17 +90,18 @@ Shader "Unlit/SoundBarrier"
                 float waveMover = _Time.y * _WaveWobbleSpeed;
 
                 float amplitude = lerp(_WaveAmp, 0, _DistanceValue);
+                float displacement = lerp(_DisplacementFromLine, 0.1, _DistanceValue);
 
                 float restrictor = coords.y > 0;
                 
                 float wobbledCoordsX = coords.x + waveMover;
                 float wobbledCoordsY = coords.x - waveMover;
                 
-                float wave1 = (coords.y - _DisplacementFromLine) < cos(wobbledCoordsX * _WaveCount * TAU) * amplitude && restrictor;
-                float wave2 = coords.y + _DisplacementFromLine > cos(wobbledCoordsY * _WaveCount * TAU) * amplitude && 1 - restrictor;
+                float wave1 = (coords.y - displacement) < cos(wobbledCoordsX * _WaveCount * TAU) * amplitude && restrictor;
+                float wave2 = coords.y + displacement > cos(wobbledCoordsY * _WaveCount * TAU) * amplitude && 1 - restrictor;
 
-                float borderMaskUpper = saturate(( coords.y - _DisplacementFromLine ) < cos( wobbledCoordsX * _WaveCount * TAU ) * amplitude && (coords.y - _DisplacementFromLine) > (cos(wobbledCoordsX * _WaveCount * TAU) * amplitude - _BorderThickness) && coords.y > 0);
-                float borderMaskLower = saturate(( coords.y + _DisplacementFromLine ) > cos( wobbledCoordsY * _WaveCount * TAU ) * amplitude && (coords.y + _DisplacementFromLine) < (cos(wobbledCoordsY * _WaveCount * TAU) * amplitude + _BorderThickness) && coords.y < 0);
+                float borderMaskUpper = saturate(( coords.y - displacement ) < cos( wobbledCoordsX * _WaveCount * TAU ) * amplitude && (coords.y - displacement) > (cos(wobbledCoordsX * _WaveCount * TAU) * amplitude - _BorderThickness) && coords.y > 0);
+                float borderMaskLower = saturate(( coords.y + displacement ) > cos( wobbledCoordsY * _WaveCount * TAU ) * amplitude && (coords.y + displacement) < (cos(wobbledCoordsY * _WaveCount * TAU) * amplitude + _BorderThickness) && coords.y < 0);
 
                 float borderMask = borderMaskUpper + borderMaskLower;
 

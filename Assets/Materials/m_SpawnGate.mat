@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: m_SpawnGate
+  m_Shader: {fileID: 4800000, guid: 34f2c06060c0f0742972970ed6b972c5, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Icon:
+        m_Texture: {fileID: 2800000, guid: 94bb719ff6e1ae8468aefd21d5cde7de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 17198718c5735204999fb13dc36e290f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _HighlightMoveSpeed: 0.25
+    - _HighlightThickness: 0.2
+    - _IconSize: 8
+    - _OutlineThickness: 0.8
+    - _ShowTexture: 0
+    - _Value: 0.1
+    m_Colors:
+    - _HighlightColor: {r: 1, g: 0.95981133, b: 0.5981132, a: 1}
+    - _InsideColor: {r: 1, g: 0.8454399, b: 0, a: 0.18431373}
+    - _OutlineColor: {r: 1, g: 0.87459564, b: 0, a: 0.827451}
+  m_BuildTextureStacks: []

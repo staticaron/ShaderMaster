@@ -27,8 +27,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _BorderThickness: 0.02
-    - _DisplacementFromLine: 0.18
-    - _DistanceValue: 1.699999
+    - _DisplacementFromLine: 0.14
+    - _DistanceValue: 2.2099984
     - _MaxDistance: 30
     - _WaveAmp: 0.15
     - _WaveCount: 1
