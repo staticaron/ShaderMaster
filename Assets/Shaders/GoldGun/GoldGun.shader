@@ -10,6 +10,7 @@ Shader "Unlit/GoldGun"
         [NoScaleOffset] _GoldMap("Gold Map", 2D) = "white" {}
 
         _Smoothness("Smoothness", Float) = 0.1
+        _Metallic("Metallic", Float) = 0.1
         _Ambient("Ambient", Float) = 0.1
 
         _GoldLineThickness("Gold Line Thickness", Float) = 0.1
@@ -56,6 +57,7 @@ Shader "Unlit/GoldGun"
             sampler2D _RoughnessMap;
             sampler2D _GoldMap;
 
+            float _Metallic;
             float _Smoothness;
             float _Ambient;
 
@@ -133,8 +135,9 @@ Shader "Unlit/GoldGun"
                 float  aoSample      = tex2D(_AOMap, i.uv1).x;
                 float  goldSample    = get_gold(i.uv2);
 
+                float3 metallicValue = lerp( lightOutput.xyz * mainTexSample, lightOutput.xyz * mainTexSample * ( 1 - _Metallic * 0.15), tex2D(_GoldMap, i.uv2));
 
-                float4 finalRGB = float4( ( lightOutput.xyz * mainTexSample + lightOutput.www * tex2D(_RoughnessMap, i.uv1).x + _GoldLineColor * goldSample), 1);
+                float4 finalRGB = float4( metallicValue + lightOutput.www * tex2D(_RoughnessMap, i.uv1).x * mainTexSample * _Metallic + _GoldLineColor * goldSample, 1);
 
                 return finalRGB * aoSample;
             }

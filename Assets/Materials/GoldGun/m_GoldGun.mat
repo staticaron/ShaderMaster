@@ -50,8 +50,10 @@ Material:
     - _Delay: 12
     - _GoldLineMoveSpeed: 2.4
     - _GoldLinePosition: 0.48
-    - _GoldLineThickness: 0.2
-    - _Smoothness: 1
+    - _GoldLineThickness: 0.1
+    - _Metallic: 5
+    - _Metallicness: 1.04
+    - _Smoothness: 1.06
     m_Colors:
-    - _GoldLineColor: {r: 1.8980392, g: 1.2627451, b: 0, a: 1}
+    - _GoldLineColor: {r: 2.9960785, g: 2.0078433, b: 0, a: 1}
   m_BuildTextureStacks: []
