@@ -10,6 +10,8 @@ Material:
   m_Name: m_ReinShield
   m_Shader: {fileID: -6465566751694194690, guid: 6d4e03daba5b9df4eacd78ad95d86959,
     type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
@@ -17,7 +19,9 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -61,6 +65,7 @@ Material:
     - _MainTint: {r: 0, g: 0.2372549, b: 0.427451, a: 1}
     - _OutlineTint: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &7683579966231588170
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -73,4 +78,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 5
+  version: 9

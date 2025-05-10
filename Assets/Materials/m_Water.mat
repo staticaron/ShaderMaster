@@ -10,6 +10,8 @@ Material:
   m_Name: m_Water
   m_Shader: {fileID: -6465566751694194690, guid: 70b3b0eaf6a761548b6de5262ac9d798,
     type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -17,7 +19,9 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -52,6 +56,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReverseWaveSpeed: -0.05
+    - _Smoothness: 0
     - _Strength: 1
     - _WaveDisplacementSpeed: 0.3
     - _WaveHeightStrength: 0.3
@@ -65,10 +70,11 @@ Material:
     - _MainNormalTiling: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _MainTint: {r: 0, g: 0.66507936, b: 1, a: 1}
     - _ReverseNormalTiling: {r: 0.6, g: 0.6, b: 0, a: 0}
-    - _ShallowWaterColor: {r: 0.63584906, g: 0.92270386, b: 1, a: 0.6392157}
+    - _ShallowWaterColor: {r: 0, g: 0.52964073, b: 0.8113208, a: 0.6392157}
     - _WaveColor: {r: 0, g: 1, b: 0.9293189, a: 1}
     - _WaveTextureTiling: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &2427708936963275337
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -81,4 +87,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 5
+  version: 9
